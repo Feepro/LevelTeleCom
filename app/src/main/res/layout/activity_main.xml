@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/LoginBG"
+        android:layout_width="333dp"
+        android:layout_height="60dp"
+        android:foreground="@drawable/text_field_login_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/text_field_login_gradient" />
+
+    <ImageView
+        android:id="@+id/loginICO"
+        android:layout_width="29dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/LoginBG"
+        app:layout_constraintStart_toStartOf="@+id/LoginBG"
+        app:layout_constraintTop_toTopOf="@+id/LoginBG"
+        app:srcCompat="@drawable/ic_login" />
+
+    <EditText
+        android:id="@+id/loginET"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:hint="Login"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ADEAEA"
+        app:layout_constraintBottom_toBottomOf="@+id/LoginBG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/LoginBG" />
+
+    <ImageView
+        android:id="@+id/passBACK"
+        android:layout_width="333dp"
+        android:layout_height="60dp"
+        android:foreground="@drawable/text_field_login_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginET"
+        app:layout_constraintVertical_bias="0.07999998"
+        app:srcCompat="@drawable/text_field_login_gradient" />
+
+    <ImageView
+        android:id="@+id/passICO"
+        android:layout_width="29dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/passBACK"
+        app:layout_constraintStart_toStartOf="@+id/passBACK"
+        app:layout_constraintTop_toTopOf="@+id/passBACK"
+        app:srcCompat="@drawable/ic_pass" />
+
+    <EditText
+        android:id="@+id/passET"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
+        android:background="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ADEAEA"
+        app:layout_constraintBottom_toBottomOf="@+id/passBACK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/passBACK" />
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="188dp"
+        android:layout_height="174dp"
+        app:layout_constraintBottom_toTopOf="@+id/LoginBG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@mipmap/ic_logo_foreground" />
+
+    <ImageView
+        android:id="@+id/label"
+        android:layout_width="397dp"
+        android:layout_height="378dp"
+        app:layout_constraintBottom_toTopOf="@+id/LoginBG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoIV"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@mipmap/ic_logo_text_background" />
+
+    <ImageView
+        android:id="@+id/linesBACK"
+        android:layout_width="431dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_login" />
+
+    <ImageButton
+        android:id="@+id/singInBACK"
+        style="@style/RoundedCornerButton"
+        android:layout_width="309dp"
+        android:layout_height="56dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passBACK"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/btn_rounded_corner" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
